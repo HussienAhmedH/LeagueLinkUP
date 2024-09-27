@@ -1,17 +1,23 @@
 :root{
-  -main-dark:#121212d8;
-  -main-green:#97FB57;
-  -main-white:#F6F2F2;
-  -main-gray:#909090;
+  --dark:#121212d8;
+  --green:#97FB57;
+  --white:#F6F2F2;
+  --gray:#909090;
 
 }
 
-h1, h2, h3, h4, h5, h6 , P{
+h1, h2, h3, h4, h6 , P{
   clear: both;
   font-family: 'Trebuchet MS', sans-serif;
-  color: #97FB57;
-
+  color:var(--green);
+  
 }
+h5{
+  font-size: 4em;
+  font-weight: bolder;
+  color: var(--green) ;
+}
+
 @font-face {
   font-family:'Trebuchet MS', sans-serif;
   src: url(Trebuchet-MS-Italic.ttf);
@@ -26,47 +32,52 @@ h1, h2, h3, h4, h5, h6 , P{
    top: 0;
    left: 0;
    z-index: 10; 
-   box-shadow: 0px 1px 2px#97FB57, 
-              0px 2px 4px #97FB57, 
-              0px 4px 8px #97FB57, 
-              0px 8px 16px #97FB57;
+   box-shadow: 0px 1px 2px var(--green), 
+              0px 2px 4px var(--green), 
+              0px 4px 8px var(--green), 
+              0px 8px 16px var(--green);
+}
+.btn{
+  color : var(--green);
 }
 .btn:hover{
   z-index: 1;
   transition: 0.5s;
-  border-top-left-radius: 40%;
+  /* border-top-left-radius: 30%; */
 
-  box-shadow: 0px 1px 2px#97FB57, 
-              0px 2px 4px #97FB57, 
-              0px 4px 8px #97FB57, 
-              0px 8px 16px #97FB57;
+  box-shadow: 0px 1px 2px var(--green), 
+              0px 2px 4px var(--green), 
+              0px 4px 8px var(--green), 
+              0px 8px 16px var(--green);
                         
 } 
 .form-control{
-  background-color: #909090 ;
-  opacity: none;
+  background-color: var(--dark) ;
+
 }
  
 
  nav{
-  background-color: #121212d8;
+  background-color:var(--dark);
   opacity: 60%;
  }
  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: #97FB57 ;
+  color: var(--green) ;
 }
 .navbar .navbar-brand{
-  color: #97FB57 ;
+  color: var(--green) ;
 }
 .navbar-nav .nav-item .nav-link{
-  color: #97FB57 ;
+  color: var(--green) ;
 }
- h5{
-   font-size: 4em;
-   font-weight: bolder;
-   color: #97FB57 ;
- }
- 
+.dropdown-menu .dropdown-item {
+  color: var(--green);
+
+}
+.dropdown-menu {
+  background-color: var(--dark);
+}
+
  .carousel-inner {
    width: 100vw;
    height: 100vh;
